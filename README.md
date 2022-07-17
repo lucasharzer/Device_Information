@@ -5,9 +5,9 @@ Como pegar informações de configurações da máquina usando as linguagens: Py
 
 # Bibliotecas usadas
 
-- os (módulo do NodeJS que usa as funcionalidades que são dependentes de sistema operacional);
 - platform (módulo do Python que fornece uma API para obter informações sobre o sistema/plataforma);
 - psutil (módulo do Python multiplataforma para recuperar informações sobre processos em execução e utilização do sistema);
+- os (módulo do NodeJS que usa as funcionalidades que são dependentes de sistema operacional).
 
 # Comandos e Resultados
 
@@ -23,3 +23,6 @@ python device_information.py
 ```bash
 node device_information.js
 ```
+<sapn>
+    <img src="https://user-images.githubusercontent.com/85804895/179380197-8de98b9f-5d79-437a-9d9a-4de0392a37c5.gif">
+</span>
