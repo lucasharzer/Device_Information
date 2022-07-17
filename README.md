@@ -1,14 +1,14 @@
 # Informações do Dispositivo
 
-- Definição
+# Definição
 Como pegar informações de configurações da máquina usando as linguagens: Python e NodeJS.
 
-- Bibliotecas usadas
+# Bibliotecas usadas
 
-NodeJS: 
+- NodeJS: 
 os (módulo que usa as funcionalidades que são dependentes de sistema operacional);
 
-Python: 
+- Python: 
 platform (módulo que fornece uma API para obter informações sobre o sistema/plataforma);
 psutil (módulo multiplataforma para recuperar informações sobre processos em execução e utilização do sistema);
 
