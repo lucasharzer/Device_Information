@@ -5,8 +5,10 @@ Como pegar informações de configurações da máquina usando as linguagens: Py
 
 - Bibliotecas usadas
 
-NodeJS: os (módulo que usa as funcionalidades que são dependentes de sistema operacional);
+NodeJS: 
+os (módulo que usa as funcionalidades que são dependentes de sistema operacional);
 
-Python: platform (módulo que fornece uma API para obter informações sobre o sistema/plataforma);
-        psutil (módulo multiplataforma para recuperar informações sobre processos em execução e utilização do sistema);
+Python: 
+platform (módulo que fornece uma API para obter informações sobre o sistema/plataforma);
+psutil (módulo multiplataforma para recuperar informações sobre processos em execução e utilização do sistema);
 
