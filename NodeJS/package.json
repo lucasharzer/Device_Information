@@ -1,0 +1,17 @@
+{
+  "name": "informacoes_dispositivo",
+  "version": "1.0.0",
+  "description": "Obter informações importantes do dispositivo em que o programa é executado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lucasharzer",
+  "license": "ISC",
+  "dependencies": {
+    "diskinfo": "^0.0.3",
+    "gpu-info": "^0.0.1",
+    "systeminformation": "^5.23.4"
+  }
+}

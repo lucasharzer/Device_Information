@@ -1,0 +1,6 @@
+# Pacotes de cache de arquivos importados do python
+__pycache__
+# Pasta de módulos das dependências do Node JS
+node_modules
+# Arquivos de detalhes das depenências do Node JS
+package-lock.json
