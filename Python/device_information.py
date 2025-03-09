@@ -29,6 +29,9 @@ class SystemInfo:
         self.informacoes["Rede"] = platform.node()
         # - Uso da CPU (intervalo de 4 segundos)
         self.informacoes["Porcentagem da CPU"] = self.convert_value(psutil.cpu_percent(4)) + "%"
+        # - Quantidade de Memória RAM
+        ram = (psutil.virtual_memory().total) / (1024 ** 3)
+        self.informacoes["Memória RAM"] = f"{ram:.2f} GB"
         # - Uso de memória RAM
         self.informacoes["Porcentagem de RAM"] = self.convert_value(psutil.virtual_memory().percent) + "%"
         # - Bateria
