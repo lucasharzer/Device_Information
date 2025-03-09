@@ -12,14 +12,16 @@ class SistemaInformacoes {
     // Método para obter informações do sistema
     async obterInformacoes() {
         console.log("\nCarregando as informações...");
+        const cpus = os.cpus();
 
         // Coleta de informações do sistema
         this.informacoes["Arquitetura"] = os.arch();
         this.informacoes["Plataforma"] = os.platform();
+        this.informacoes["Processador"] = cpus[0].model;
 
         // Memória
         const memoria_total = (os.totalmem() / 1024) / 1024;
-        this.informacoes["Memória Total (GB)"] = memoria_total.toFixed(2);
+        this.informacoes["Memória RAM Total (GB)"] = memoria_total.toFixed(2);
         const memoria_livre = (os.freemem() / 1024) / 1024;
         this.informacoes["Memória Livre (GB)"] = memoria_livre.toFixed(2);
         const porcentagem = (memoria_livre / memoria_total) * 100;
@@ -41,7 +43,6 @@ class SistemaInformacoes {
         this.informacoes["Hostname"] = os.hostname();
 
         // Informações sobre CPUs
-        const cpus = os.cpus();
         const cpuInfoList = cpus.map((cpu, index) => {
             return `\n-- CPU ${index + 1}:\nModelo: ${cpu.model}\nNúcleos: ${cpu.cores}\nTempo de Idle: ${cpu.times.idle} ns\nTempo de Usuário: ${cpu.times.user} ns\nTempo de Sistema: ${cpu.times.sys} ns`;
         });
